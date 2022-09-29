@@ -1,0 +1,75 @@
+<link href='https://css.gg/search.css' rel='stylesheet'>
+
+ <div class="container">
+    <mat-toolbar class="toolbar">
+        <div>
+            Location Manager
+        </div>
+        <div class="align">
+            Click on the Map to Insert data
+        </div>
+    </mat-toolbar>
+
+    <nav>
+        <div class="navbar">
+
+            <div>&nbsp;
+                <div class="gg-search" style="margin-left: 10px;"></div>
+            </div>
+        
+            <div id="map">
+            </div>
+            <div>
+                <div class="list">
+                    List
+                </div>
+                <div class="section">
+                    <div class="leftAlign">
+                        <mat-card class="listCard onhoverList">
+                            <mat-card-title>Name</mat-card-title>
+                            <mat-card-content>This is a dummy description fields,This is a dummy description fields
+                            </mat-card-content>
+                        </mat-card>
+
+                        <mat-card class="listCard onhover">
+                            <mat-card-title>Name</mat-card-title>
+                            <mat-card-content>This is a dummy description fields,This is a dummy description fields
+                            </mat-card-content>
+                        </mat-card>
+
+                        <mat-card class="listCard onhover">
+                            <mat-card-title>Name</mat-card-title>
+                            <mat-card-content>This is a dummy description fields,This is a dummy description fields
+                            </mat-card-content>
+                        </mat-card>
+
+                        <div>
+                            <div class="scrollbar"></div>
+                        </div>
+                    
+                    </div>
+                    <div class="middleAlign">
+                        <div style="border-right: 1px solid black; height: 350px;"></div>
+                    </div>
+                    <div class="rightAlign">
+                        <mat-card>
+                            <input class="name-section" type="text" placeholder="Enter the Name" />
+                        </mat-card>
+
+                        <div class="lat-long-section">
+                            <input class="lat-section" type="text" placeholder="Latitude" />&nbsp;
+                            <input class="lng-section" type="text" placeholder="Longitude" />
+                        </div>
+
+                        <mat-card>
+                            <input class="desc-section" type="text" placeholder="Enter the Description"/>
+                        </mat-card>
+
+                        <input class="btn" type="button" value="Update" (click)="update()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+

@@ -1,0 +1,137 @@
+.container {
+    position: fixed;
+    margin-top: 15px;
+}
+
+#map {
+    height: 300px;
+    width: 1400px;
+    padding-left: 45px;
+    margin-top: -30px;
+
+}
+
+.searchbar {
+    margin-left: 10px;
+}
+
+.toolbar {
+    background-color: aliceblue;
+    width: 1450px;
+    height: 25px;
+    color: dodgerblue;
+}
+
+.navbar {
+    background-color: dodgerblue;
+    height: 650px;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.align {
+    padding-left: 1050px;
+}
+
+.list {
+    padding-left: 60px;
+    margin-top: 8px;
+    font-weight: bolder;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.leftAlign {
+    width: 46%;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    margin-left: 700px;
+    height: 300px;
+    width: 30px;
+    margin-top: -270px;
+}
+
+.middleAlign {
+    width: 2%;
+    padding-left: 750px;
+    margin-top: -330px;
+    height: 370px;
+}
+
+.rightAlign {
+    width: 46%;
+    padding-left: 800px;
+    margin-top: -320px;
+}
+
+.name-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: groove;
+    height: 40px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.lat-long-section {
+    columns: 2;
+}
+
+.lat-section {
+    margin-left: 15px;
+    width: 290px;
+    height: 40px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.lng-section {
+    margin-left: 310px;
+    width: 290px;
+    height: 40px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.desc-section {
+    width: 600px;
+    height: 100px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.listCard {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: groove;
+    height: 40px;
+    width: 500px;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.onhoverList {
+    background-color: dodgerblue;
+}
+
+.onhover:hover {
+    background-color: dodgerblue;
+}
+
+.btn {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-left: 525px;
+}
+

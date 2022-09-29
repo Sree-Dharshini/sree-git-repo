@@ -1,0 +1,254 @@
+<link href='https://css.gg/search.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+    <mat-toolbar class="toolbar">
+        <div>
+            Users
+        </div>
+
+    </mat-toolbar>
+
+
+    <nav>
+        <div class="navbar">
+
+            <div class="in-btn-section">
+                <input #user class="in-section icon" type="search" placeholder="Search" />&nbsp;
+                <input class="btn-section" type="button" value="Search" click="search(user)" />
+
+            </div>
+
+            <!-- <div style="margin-left: 100px;" *ngFor="let items of data.items">
+                {{items.login}}
+            </div> -->
+
+            <div class="btn-toggle">
+                <i class="fa fa-th-large grid-section btnhover" (click)="grid()"></i>&nbsp;
+                <i class="fa fa-list list-section btnhover" (click)="list()"></i>
+            </div>
+
+
+            <div class="card-list-section" *ngIf="!btnGrid btnList">
+                <div class="left-card-section">
+                    <mat-card class="card left-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -100px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="right-card-section">
+                    <mat-card class="card right-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -90px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="left-card-section">
+                    <mat-card class="card left-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -90px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="right-card-section">
+                    <mat-card class="card right-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -90px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="left-card-section">
+                    <mat-card class="card left-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -90px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="right-card-section">
+                    <mat-card class="card right-card-list-section">
+                        <mat-card-content><img class="img-size" src="assets/user-photo.png"></mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -90px;">ID:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.id}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 180px;margin-top: -38px;" *ngIf="hide !show"> 67582618998
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">User Name:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.login}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 240px;margin-top: -38px;" *ngIf="hide !show"> Prasanth
+                        </mat-card-content>
+                        <mat-card-subtitle style="margin-left: 150px;margin-top: -20px;">Score:</mat-card-subtitle>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="show !hide">
+                            {{this.userDetails.score}}
+                        </mat-card-content>
+                        <mat-card-content style="margin-left: 200px;margin-top: -38px;" *ngIf="hide !show"> 22
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+
+            </div>
+
+            <div *ngIf="!btnList btnGrid">
+                <mat-card class="btn-list-toggle">
+                    <mat-list>
+                        <mat-list-item>
+                            <div class="listHeadAlign">
+                                <div>
+                                    User
+                                </div>
+                                <div>
+                                    ID
+                                </div>
+                                <div class="username-list">
+                                    User Name
+                                </div>
+                                <div class="score-list">
+                                    Score
+                                </div>
+                            </div>
+                        </mat-list-item>
+
+                        <mat-divider style="height: 35px;"></mat-divider>
+
+                        <mat-list-item>
+                            <div class="rowOneAlign">
+                                <div><img class="img-user" src="assets/user-photo.png"></div>
+                                <div *ngIf="show !hide" style="margin-left: 40px;margin-top:60px;">{{this.userDetails.id}}
+                                </div>
+                                <div *ngIf="hide !show" style="margin-left: 30px;margin-top:60px;">67582618998</div>
+                                <div *ngIf="show !hide" style="margin-left: 80px;margin-top:60px;">
+                                    {{this.userDetails.login}}</div>
+                                <div *ngIf="hide !show" style="margin-left: 60px;margin-top:60px;">Prasanth</div>
+                                <div *ngIf="show !hide" style="margin-left: 150px;margin-top:60px;">
+                                    {{this.userDetails.score}}</div>
+                                <div *ngIf="hide !show" style="margin-left: 150px; margin-top:60px;">22</div>
+                                </div>
+                        </mat-list-item>
+
+                        <mat-divider style="height:40px;"></mat-divider>
+
+                        <mat-list-item>
+                            <div class="rowTwoAlign">
+
+                            <div><img class="img-user" src="assets/user-photo.png"></div>
+                            <div *ngIf="show !hide" style="margin-left: 40px;margin-top:60px;">{{this.userDetails.id}}
+                            </div>
+                            <div *ngIf="hide !show" style="margin-left: 30px;margin-top:60px;">67582618998</div>
+                            <div *ngIf="show !hide" style="margin-left: 80px;margin-top:60px;">
+                                {{this.userDetails.login}}</div>
+                            <div *ngIf="hide !show" style="margin-left: 60px;margin-top:60px;">Prasanth</div>
+                            <div *ngIf="show !hide" style="margin-left: 150px;margin-top:60px;">
+                                {{this.userDetails.score}}</div>
+                            <div *ngIf="hide !show" style="margin-left: 150px; margin-top:60px;">22</div>
+                            </div>
+                        </mat-list-item>
+
+                        <mat-divider style="height: 35px;"></mat-divider>
+
+                        <mat-list-item>
+                            <div class="rowThreeAlign">
+                            <div><img class="img-user" src="assets/user-photo.png"></div>
+                            <div *ngIf="show !hide" style="margin-left: 40px;margin-top:60px;">{{this.userDetails.id}}
+                            </div>
+                            <div *ngIf="hide !show" style="margin-left: 30px;margin-top:60px;">67582618998</div>
+                            <div *ngIf="show !hide" style="margin-left: 80px;margin-top:60px;">
+                                {{this.userDetails.login}}</div>
+                            <div *ngIf="hide !show" style="margin-left: 60px;margin-top:60px;">Prasanth</div>
+                            <div *ngIf="show !hide" style="margin-left: 150px;margin-top:60px;">
+                                {{this.userDetails.score}}</div>
+                            <div *ngIf="hide !show" style="margin-left: 150px; margin-top:60px;">22</div>
+                            </div>
+                        </mat-list-item>
+
+                    </mat-list>
+                </mat-card>
+            </div>
+        </div>
+    </nav>
