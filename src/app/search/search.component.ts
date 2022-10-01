@@ -55,7 +55,7 @@ list(){
   let elementList = document.getElementById('list')?.hidden;
   elementList = true;
   this.btnGrid = true;
-  this.btnList = false;
+  this.btnList = false; 
 }
 
 

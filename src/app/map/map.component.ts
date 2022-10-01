@@ -17,7 +17,7 @@ export class MapComponent implements OnInit {
   constructor() {}
     
   ngOnInit(): void {
-    this.createMap = new Map({
+    this.createMap = new Map({ 
      target:'map',
      layers:[
       new TileLayer({
